@@ -6,7 +6,7 @@
 ## Getting started
 
 ```sh
-  npm install react-native-plug-pag-service -D
+  npm install react-native-plug-pag-service --save
 ```
 
 ### Mostly automatic installation
