@@ -43,6 +43,7 @@ public class PlugPagServiceModule extends ReactContextBaseJavaModule {
     public Map<String, Object> getConstants() {
         final Map<String, Object> constants = new HashMap<>();
         constants.put("PlugPag", Collections.unmodifiableMap(new HashMap<String, Object>() {{
+            put("NFC_RET_OK", PlugPag.NFC_RET_OK);
             put("A_VISTA_INSTALLMENT_QUANTITY", PlugPag.A_VISTA_INSTALLMENT_QUANTITY);
             put("AUTHENTICATION_FAILED", PlugPag.AUTHENTICATION_FAILED);
             put("BUFFER_SIZE_ERROR", PlugPag.BUFFER_SIZE_ERROR);
