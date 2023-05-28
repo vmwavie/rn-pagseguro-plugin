@@ -6,7 +6,7 @@
 ## Getting started
 
 ```sh
-  yarn install react-native-plug-pag-service -D
+  npm install react-native-plug-pag-service -D
 ```
 
 ### Mostly automatic installation
