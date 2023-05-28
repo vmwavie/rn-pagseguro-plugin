@@ -56,46 +56,46 @@ import PlugPagService, { PlugPag, PlugPagPaymentData, PlugPagActivationData } fr
 
 | Parameter | Description                       |
 | :-------- |:--------------------------------  |
-| `A_VISTA_INSTALLMENT_QUANTITY` | Quantidade de parcelas padrão de uma venda à vista. |
-| `AUTHENTICATION_FAILED` | Código utilizado para quando a PlugPagService não esta ativada. |
-| `BUFFER_SIZE_ERROR` | Código utilizado para indicar falha na geração de mensagem da transação, ocasionado pelo tamanho do buffer.
-| `COMMUNICATION_ERROR` | Código utilizado  para erros de comunicação.
-| `DISABLED_FUNCTION` | Código utilizado para indicar que dada funcionalidade não está disponível para o terminal.
-| `ERROR_CODE_OK` | Código utilizado para sucesso numa transação.
-| `INSTALLMENT_TYPE_A_VISTA` | Forma de parcelamento: À vista.
-| `INSTALLMENT_TYPE_PARC_COMPRADOR` | Forma de parcelamento: Parcelamento comprador.
-| `INSTALLMENT_TYPE_PARC_VENDEDOR` | Forma de parcelamento: Parcelamento vendedor.
-| `INVALID_AMOUNT_FORMAT` | Código utilizado para indicar que o valor da transação é inválido, podendo ser um erro de digitação ou formatação.
-| `INVALID_BUFFER_DATA` | Código utilizado para indicar que o buffer de resposta é inválido, sendo necessário refazê-la.
-| `INVALID_LENGTH_USER_REFERENCE` | Código utilizado para indicar que o código da venda ultrapassou o tamanho limite (10 caracteres).
-| `MIN_PRINTER_STEPS` | Quantidade mínima de linhas impressas após a impressão finalizar.
-| `MODE_PARTIAL_PAY` | Código utilizado para pagamento parcial.
-| `NFC_RET_ERROR` | Código utilizado para indicar falha nas operações de NFC.
-| `NFC_RET_OK` | Código utilizado para indicar sucesso nas operações de NFC.
-| `NO_PRINTER_DEVICE` | Código utilizado quando não existe impressora no dispositivo.
-| `NO_TRANSACTION_DATA` | Código utilizado para transação sem dados.
-| `NULL_AMOUNT` | Código utilizado para indicar que o valor da transação está nulo.
-| `NULL_APPLICATION_PARAMETER` | Código utilizado para inidcar que o parâmetro da aplicação está com valor nulo.
-| `NULL_TOTAL_AMOUNT` | Código utilizado para indicar que o valor total da transação está nulo.
-| `NULL_TRANSACTION_RESULT` | Código utilizado para inidicar que o Valor resultante da transação está nulo.
-| `NULL_USER_REFERENCE` | Código utilizado para indicar que o código de venda está nulo.
-| `OPERATION_ABORTED` | Código utilizado como retorno de uma transação cancelada.
-| `PLUGPAG_ASYNC_CONFIRMATION` | Constante de configuração remota para confirmação assíncrona.
-| `PLUGPAG_ASYNC_METRICS` | Constante de configuração remota para envio de métricas.
-| `PLUGPAG_CDCVM` | Constante de configuração remota para CDCVM.
-| `PLUGPAG_CRASHLOG_SENDING` | Constante de configuração remota para envio de logs de crash.
-| `PLUGPAG_PRE_PRINTING` | Constante de configuração remota para pré-impressão.
-| `POS_NOT_READY` | Código utilizado para indicar que o terminal não está pronto para transacionar.
-| `RET_OK` | Código utilizado para indicar sucesso nas operações.
-| `SHARE_MODE_NOT_ALLOWED` | Código utilizado para indicar que a transação via bluetooth não é permitida em modo compartilhado.
-| `TRANSACTION_DENIED` | Código utilizado para indicar transação não realizada.
-| `TYPE_CREDITO` | Tipo de pagamento: Crédito.
-| `TYPE_DEBITO` | Tipo de pagamento: Débito.
-| `TYPE_PIX` | Tipo de pagamento: QR Code Pix.
-| `TYPE_PREAUTO_CARD` | Tipo de pagamento: Pré-autorização via cartão.
-| `TYPE_PREAUTO_KEYED` | Tipo de pagamento: Pré-autorização por digitação.
-| `TYPE_QRCODE` | Tipo de pagamento: QR Code débito.
-| `TYPE_QRCODE_CREDITO` | Tipo de pagamento: QR Code crédito.
-| `TYPE_VOUCHER` | Tipo de pagamento: Voucher (vale refeição).
-| `VOID_PAYMENT` | Código utilizado para estorno de um pagamento.
-| `VOID_QRCODE` | Código utilizado para um estorno via QR Code.
+| `A_VISTA_INSTALLMENT_QUANTITY` | Default installment quantity for cash sales. |
+| `AUTHENTICATION_FAILED` | Code used when PlugPagService is not enabled. |
+| `BUFFER_SIZE_ERROR` | Code used to indicate transaction message generation failure due to buffer size. |
+| `COMMUNICATION_ERROR` | Code used for communication errors. |
+| `DISABLED_FUNCTION` | Code used to indicate that a given functionality is not available for the terminal. |
+| `ERROR_CODE_OK` | Code used for successful transaction. |
+| `INSTALLMENT_TYPE_A_VISTA` | Installment type: Cash. |
+| `INSTALLMENT_TYPE_PARC_COMPRADOR` | Installment type: Buyer installment. |
+| `INSTALLMENT_TYPE_PARC_VENDEDOR` | Installment type: Seller installment. |
+| `INVALID_AMOUNT_FORMAT` | Code used to indicate that the transaction amount is invalid, possibly due to a typing or formatting error. |
+| `INVALID_BUFFER_DATA` | Code used to indicate that the response buffer is invalid and needs to be reestablished. |
+| `INVALID_LENGTH_USER_REFERENCE` | Code used to indicate that the sale code exceeds the size limit (10 characters). |
+| `MIN_PRINTER_STEPS` | Minimum number of lines printed after the printing process finishes. |
+| `MODE_PARTIAL_PAY` | Code used for partial payment. |
+| `NFC_RET_ERROR` | Code used to indicate NFC operation failure. |
+| `NFC_RET_OK` | Code used to indicate success in NFC operations. |
+| `NO_PRINTER_DEVICE` | Code used when no printer is available on the device. |
+| `NO_TRANSACTION_DATA` | Code used for transaction without data. |
+| `NULL_AMOUNT` | Code used to indicate that the transaction amount is null. |
+| `NULL_APPLICATION_PARAMETER` | Code used to indicate that the application parameter is null. |
+| `NULL_TOTAL_AMOUNT` | Code used to indicate that the total transaction amount is null. |
+| `NULL_TRANSACTION_RESULT` | Code used to indicate that the transaction result value is null. |
+| `NULL_USER_REFERENCE` | Code used to indicate that the sale code is null. |
+| `OPERATION_ABORTED` | Code used as a return for a canceled transaction. |
+| `PLUGPAG_ASYNC_CONFIRMATION` | Remote configuration constant for asynchronous confirmation. |
+| `PLUGPAG_ASYNC_METRICS` | Remote configuration constant for sending metrics. |
+| `PLUGPAG_CDCVM` | Remote configuration constant for CDCVM. |
+| `PLUGPAG_CRASHLOG_SENDING` | Remote configuration constant for sending crash logs. |
+| `PLUGPAG_PRE_PRINTING` | Remote configuration constant for pre-printing. |
+| `POS_NOT_READY` | Code used to indicate that the terminal is not ready for transaction. |
+| `RET_OK` | Code used to indicate success in operations. |
+| `SHARE_MODE_NOT_ALLOWED` | Code used to indicate that Bluetooth transaction is not allowed in shared mode. |
+| `TRANSACTION_DENIED` | Code used to indicate unsuccessful transaction. |
+| `TYPE_CREDITO` | Payment type: Credit. |
+| `TYPE_DEBITO` | Payment type: Debit. |
+| `TYPE_PIX` | Payment type: Pix QR Code. |
+| `TYPE_PREAUTO_CARD` | Payment type: Pre-authorization via card. |
+| `TYPE_PREAUTO_KEYED` | Payment type: Pre-authorization via manual entry. |
+| `TYPE_QRCODE` | Payment type: Debit QR Code. |
+| `TYPE_QRCODE_CREDITO` | Payment type: Credit QR Code. |
+| `TYPE_VOUCHER` | Payment type: Voucher (meal voucher). |
+| `VOID_PAYMENT` | Code used for payment reversal. |
+| `VOID_QRCODE` | Code used for QR Code reversal. |
