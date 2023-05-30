@@ -52,7 +52,7 @@
 import PlugPagService, { PlugPag, PlugPagPaymentData, PlugPagActivationData } from 'rn-pagseguro-plugin';
 ```
 
-## Functions
+## Enums
 
 | Parameter | Description                       |
 | :-------- |:--------------------------------  |
